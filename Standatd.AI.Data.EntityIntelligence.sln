@@ -3,16 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Standatd.AI.Data.EntityIntelligence", "Standatd.AI.Data.EntityIntelligence\Standatd.AI.Data.EntityIntelligence.csproj", "{DEF0FB30-4055-4D1D-8B49-310E2D8950E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Standatd.AI.Data.EntityIntelligence", "Standatd.AI.Data.EntityIntelligence\Standatd.AI.Data.EntityIntelligence.csproj", "{DEF0FB30-4055-4D1D-8B49-310E2D8950E6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Standard.AI.Data.EntityIntelligence.Tests.Unit", "Standard.AI.Data.EntityIntelligence.Tests.Unit\Standard.AI.Data.EntityIntelligence.Tests.Unit.csproj", "{7BB74CBB-C3E9-4326-B740-F5BDCBD32C65}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Standard.AI.Data.EntityIntelligence.Tests.Integrations", "Standard.AI.Data.EntityIntelligence.Tests.Integrations\Standard.AI.Data.EntityIntelligence.Tests.Integrations.csproj", "{76D7041B-13A3-448D-A2BD-A06C8B7F864A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Standard.AI.Data.EntityIntelligence.Tests.Acceptance", "Standard.AI.Data.EntityIntelligence.Tests.Acceptance\Standard.AI.Data.EntityIntelligence.Tests.Acceptance.csproj", "{D6E9B5C4-4A94-4C21-B672-041F56BFCC7D}"
-	ProjectSection(ProjectDependencies) = postProject
-		{DEF0FB30-4055-4D1D-8B49-310E2D8950E6} = {DEF0FB30-4055-4D1D-8B49-310E2D8950E6}
-	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Standard.AI.Data.EntityIntelligence.Infrastructure.Build", "Standard.AI.Data.EntityIntelligence.Infrastructure.Build\Standard.AI.Data.EntityIntelligence.Infrastructure.Build.csproj", "{5082FF0F-3C5C-45B7-B74A-BE272FCA3EE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +35,10 @@ Global
 		{D6E9B5C4-4A94-4C21-B672-041F56BFCC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6E9B5C4-4A94-4C21-B672-041F56BFCC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6E9B5C4-4A94-4C21-B672-041F56BFCC7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5082FF0F-3C5C-45B7-B74A-BE272FCA3EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5082FF0F-3C5C-45B7-B74A-BE272FCA3EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5082FF0F-3C5C-45B7-B74A-BE272FCA3EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5082FF0F-3C5C-45B7-B74A-BE272FCA3EE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
