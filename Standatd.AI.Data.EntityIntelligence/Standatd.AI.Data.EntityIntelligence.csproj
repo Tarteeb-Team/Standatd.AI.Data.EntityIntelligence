@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CompareNETObjects" Version="4.83.0" />
     <PackageReference Include="EFxceptions" Version="0.4.5" />
     <PackageReference Include="Standard.AI.OpenAI" Version="0.6.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />

@@ -23,6 +23,7 @@ namespace Standatd.AI.Data.EntityIntelligence.Brokers.OpenAIs
 
         public async ValueTask<Completion> PromptCompletionAsync(Completion completion) =>
             await this.openAIClient.Completions.PromptCompletionAsync(completion);
+
         private IOpenAIClient InitializeOpenAIClient()
         {
             var openAIConfigurations = new OpenAIConfigurations();
