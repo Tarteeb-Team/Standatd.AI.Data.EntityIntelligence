@@ -35,8 +35,8 @@ namespace Standard.AI.Data.EntityIntelligence.Tests.Unit.Services.Foundations.AI
                     retrievedSqlQueryTask.AsTask);
 
             // then
-            retrievedSqlQueryTask.Should()
-                .BeEquivalentTo(actualAIQueryValidationException);
+            actualAIQueryValidationException.Should()
+                .BeEquivalentTo(expectedAIQueryValidationException);
 
             this.aiBrokerMock.Verify(broker =>
                 broker.PromptCompletionAsync(

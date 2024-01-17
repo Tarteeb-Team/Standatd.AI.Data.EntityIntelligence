@@ -8,15 +8,18 @@ using Standatd.AI.Data.EntityIntelligence.Brokers.OpenAIs;
 
 namespace Standatd.AI.Data.EntityIntelligence.Services.Foundations.AIs
 {
-    public class AIService : IAIService
+    public partial class AIService : IAIService
     {
         private readonly IAIBroker aiBroker;
 
         public AIService(IAIBroker aiBroker) =>
             this.aiBroker = aiBroker;
 
-        public async ValueTask<string> RetrieveSqlQueryAsync(string naturalQuery)
+        public ValueTask<string> RetrieveSqlQueryAsync(string naturalQuery) =>
+        TryCatch(async () =>
         {
+            ValidateAIQuery(naturalQuery);
+
             var completion = new Completion
             {
                 Request = new CompletionRequest
@@ -34,6 +37,6 @@ namespace Standatd.AI.Data.EntityIntelligence.Services.Foundations.AIs
                 await this.aiBroker.PromptCompletionAsync(completion);
 
             return completionResponse.Response.Choices[0].Text;
-        }
+        });
     }
 }
