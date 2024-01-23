@@ -12,7 +12,6 @@ namespace Standatd.AI.Data.EntityIntelligence.Brokers.OpenAIs
 {
     public class AIBroker : IAIBroker
     {
-
         private readonly AIConfigurations aIConfigurations;
         private readonly IOpenAIClient openAIClient;
 
