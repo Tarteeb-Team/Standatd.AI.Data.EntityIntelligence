@@ -6,6 +6,6 @@ namespace Standatd.AI.Data.EntityIntelligence.Models.Foundations.AIs
 {
     public class AIConfigurations
     {
-        public string AIApiKey{ get; set; }
+        public string AIApiKey { get; set; }
     }
 }
